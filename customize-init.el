@@ -15,5 +15,9 @@
 	(add-to-list 'load-path "~/.emacs.d/lisp/customize-lisp")	
 	(require 'customize-frame)	
 	(require 'customize-themes-list)
+	(require 'customize-operate-habit)
 	
+	;;设置打开文件的缺省路径
+	; (setq default-directory "~/Workspaces")
+	(setq default-directory "D:/AptAtt/WorkSpaces/EmacsWorkspace/daily/")
 ;;	customize end

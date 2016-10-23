@@ -1,7 +1,7 @@
 ;; --------------------------- customize-themes-list start ----------------------------
 
 ;; underwater\subatomic\brin\spolsky\adwaita\material\rippedcasts
-	;; (add-to-list 'load-path "~/.emacs.d/lisp/themes")
+	;; (add-to-list 'load-path "~/.emacs.d/lisp/themes-list")
 	; (add-to-list 'load-path "~/.emacs.d/lisp/themes-list/color-theme-6.6.0")
 	; (require 'color-theme)
 	; (color-theme-initialize)
@@ -25,7 +25,7 @@
 	; (add-to-list 'load-path "~/.emacs.d/lisp/themes-list/underwater-theme.el-master")
 	; (require 'underwater-theme)
 
-	(add-to-list 'load-path "~/.emacs.d/lisp/themes")
+	(add-to-list 'load-path "~/.emacs.d/lisp/themes-list")
 	(require 'dracula-theme)
 
 	; (add-to-list 'load-path "~/.emacs.d/lisp/themes-list/color-theme-zenburn-master")
