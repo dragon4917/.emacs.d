@@ -1,5 +1,21 @@
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+
 # Compiled
 *.elc
 
 # Packaging
 .cask
+
+# start emacs will create init.el and add some commonts
+init.el
