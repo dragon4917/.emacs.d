@@ -70,7 +70,12 @@
 		; (if (eq major-mode 'shell-mode)
 			; (rename-buffer  (concat "shell:" default-directory) t)))
     ; (add-hook 'comint-output-filter-functions'wcy-shell-mode-auto-rename-buffer)
-	
+
+;; Doing package-list-packages will also update the list of packages. 	
+	(when (not package-archive-contents)
+		(package-refresh-contents))
+
+
 	
 	
 	
