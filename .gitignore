@@ -78,3 +78,12 @@ extras/imported/**
 .yas-compiled-snippets.el
 ert-x.*
 ert.*
+
+# customize
+network-security.data
+/eshell
+/semanticdb
+/snippets
+/ac-comphist.dat
+/init.el~
+/smex-items

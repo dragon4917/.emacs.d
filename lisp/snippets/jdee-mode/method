@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: method
+# key: method
+# --
+${public} ${void} ${methodName}(${type} ${value}){
+	  
+}  

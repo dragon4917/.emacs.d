@@ -4,8 +4,8 @@
 ;; You may delete these explanatory comments.
 
 
-	(add-to-list 'load-path "~/.emacs.d/packages/")
-	(require 'package)
+	; (add-to-list 'load-path "~/.emacs.d/packages/")
+	; (require 'package)
 	(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 	(add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
 	(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -22,17 +22,29 @@
 	(require 'customize-auto-complete)
 	(require 'customize-smex)
 	(require 'plug-in-additional-settings)
-	;;设置打开文件的缺省路径
+;;设置打开文件的缺省路径
 	; (setq default-directory "~/Workspaces")
-	(setq default-directory "D:/AptAtt/WorkSpaces/EmacsWorkspace/daily/")
+	(setq default-directory "~/../WorkSpaces/EmacsWorkspace/daily/")
+	
+;;	在标题栏显示buffer的名字和大小，而不是默认的没用的显示
+	; (setq frame-title-format "emacs@%b %I")
+	; (setq frame-title-format "%b %I") ;显示文件名和大小
+	;; 标题栏	就可以显示当前项目名，当前编辑文件的完整路径。
+	(setq frame-title-format
+		(list "[" 
+	; '(:eval (projectile-project-name)) 
+		"]" "emacs@"
+			'(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
+
 	
 ;; -------------------------------- api begin start --------------------------------
-    ;; Java document support  
-    ; (add-to-list 'load-path (expand-file-name "/opt/emacs_plugins/java"))
-	(load-file "~/.emacs.d/lisp/javadoc-help.el")
-    (require 'javadoc-help)  
-	(javadoc-set-predefined-urls '("D:/ProgramFiles/docs/api"))  
-    ; (javadoc-set-predefined-urls 
+    ;; Java document support. Javadoc-lookup or Javadoc-help
+    ;; (add-to-list 'load-path (expand-file-name "/opt/emacs_plugins/java"))
+	
+	; (load-file "~/.emacs.d/lisp/javadoc-help.el")
+    ; (require 'javadoc-help)  
+	; (javadoc-set-predefined-urls '("D:/ProgramFiles/docs/api"))  
+    ;; (javadoc-set-predefined-urls 
 		; '("/opt/java_docs/common-cache-1.0.0-javadoc"  
 		; "/opt/java_docs/commons-codec-1.4-javadoc"  
         ; "/opt/java_docs/commons-logging-1.1.1-javadoc"  

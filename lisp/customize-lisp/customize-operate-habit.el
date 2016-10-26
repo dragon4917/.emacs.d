@@ -32,9 +32,9 @@
 	; (setq frame-title-format "emacs@%b %I")
 	; (setq frame-title-format "%b %I") ;显示文件名和大小
 	;; 标题栏	就可以显示当前项目名，当前编辑文件的完整路径。
-	(setq frame-title-format
-		(list "[" '(:eval (projectile-project-name)) "]" "emacs@"
-			'(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
+	; (setq frame-title-format
+		; (list "[" '(:eval (projectile-project-name)) "]" "emacs@"
+			; '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
 ;;	show column/row number
 	(global-linum-mode 'linum-mode)	;;	work

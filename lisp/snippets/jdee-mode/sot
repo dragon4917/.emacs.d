@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sot
+# key: sot
+# --
+System.out.print(${});

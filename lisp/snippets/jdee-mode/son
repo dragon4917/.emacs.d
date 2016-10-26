@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: son
+# key: son
+# --
+System.out.println(${});
