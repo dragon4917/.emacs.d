@@ -15,16 +15,22 @@
 	
 	
 ;; ================================ customize begin ================================
+	(setq gc-cons-threshold (* 5 1024 1024 1024))
+	(setq gc-cons-percentage 0.5)
+	(run-with-idle-timer 5 t #'garbage-collect)
+	(setq garbage-collection-messages t)
+
+
 	(add-to-list 'load-path "~/.emacs.d/lisp/customize-lisp")	
 	(require 'customize-frame)	
 	(require 'customize-themes-list)
 	(require 'customize-operate-habit)
 	(require 'customize-auto-complete)
 	(require 'customize-smex)
-	(require 'plug-in-additional-settings)
+	; (require 'plug-in-additional-settings)
 ;;设置打开文件的缺省路径
 	; (setq default-directory "~/Workspaces")
-	(setq default-directory "~/../WorkSpaces/EmacsWorkspace/daily/")
+	(setq default-directory "D:/WorkSpaces/EmacsWorkspace/")
 	
 ;;	在标题栏显示buffer的名字和大小，而不是默认的没用的显示
 	; (setq frame-title-format "emacs@%b %I")
