@@ -9,15 +9,19 @@ emacs configuration files
 
 ## Install
 
-The default configuration-files directory at `C:\Users\YOUR-USER-NAME\AppData\Roaming\.emacs.d`, add the next text to `init.el`.
-
+The default configuration-files directory at `C:\Users\YOUR-USER-NAME\AppData\Roaming\.emacs.d\`, load this repository to `C:\Users\YOUR-USER-NAME\AppData\Roaming\`.
+  
+ OR
+  
+ Change the name of `init.el` to `customize-init.el` and add the next text to `init.el`.
+  
   ```
   ;; Change the directory of configuration-files 
   (setenv "HOME" "YOUR-PATH-WHERE-THE-.emacs.d-DIRECTORY-IN(EXCLUDE)") 
-  (load "YOUR-PATH-WHERE-THE-.emacs.d-DIRECTORY-IN(EXCLUDE)/.emacs.d/customize-init.el")
+  (load "YOUR-PATH-WHERE-THE-.emacs.d-DIRECTORY-IN(EXCLUDE)\.emacs.d\customize-init.el")
   ```
   
-  Update the list of packages. 	
+Update the list of packages. 	
   
   ```
   M-x list-packages 

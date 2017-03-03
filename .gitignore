@@ -88,3 +88,13 @@ network-security.data
 /abbrev_defs
 /init.el~
 /smex-items
+/.session
+/custom.el
+/customize.el
+/org-clock-save.el
+/url/
+/history
+/ditaa0_9.jar
+/projectile-bookmarks.eld
+/recentf
+/.smex-items

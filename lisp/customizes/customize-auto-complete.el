@@ -1,6 +1,7 @@
-(add-to-list 'load-path "~/.emacs.d/lisp/auto-complete")
+; (add-to-list 'load-path "~/.emacs.d/lisp/auto-complete")
+	(require-package 'auto-complete)
 	(require 'auto-complete-config)
-	(add-to-list 'ac-dictionary-directories "~/.emacs.d/lisp/auto-complete/dict")
+	(add-to-list 'ac-dictionary-directories "~/.emacs.d/lisp/dict")
 	;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/lisp/auto-complete-master/ac-dict")
 	(ac-config-default)
 	

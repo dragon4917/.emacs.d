@@ -1,5 +1,6 @@
-(add-to-list 'load-path "~/.emacs.d/lisp/smex-master")
-(load-file "~/.emacs.d/lisp/smex-master/smex.el")
+; (add-to-list 'load-path "~/.emacs.d/lisp/smex-master")
+; (load-file "~/.emacs.d/lisp/smex-master/smex.el")
+(require-package 'smex)
 (require 'smex) ; Not needed if you use package.el
 (smex-initialize) ; Can be omitted. This might cause a (minimal) delay 
 
@@ -66,7 +67,13 @@
         ; (delete-dups ad-return-value)
         ; (reverse ad-return-value)
 		)))
-		
+
+
+;; ------------------------------ it is come from purcell's init-smex
+	(when (maybe-require-package 'smex)
+		;; Change path for ~/.smex-items
+		(setq-default smex-save-file (expand-file-name ".smex-items" user-emacs-directory))
+		(global-set-key [remap execute-extended-command] 'smex))
 ;; ------------------------------ customize-smex end ------------------------------
 
 (provide 'customize-smex)
